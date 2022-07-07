@@ -24,3 +24,21 @@ int main(){
 
     return 0;
 }
+
+// coding ninja answer
+
+vector<int> separateNegativeAndPositive(vector<int> &nums){
+    int t= nums.size();
+    for(int i=0;i<t-1;i++){
+        for(int j=0; j<t-i-1; j++){
+            if(nums[j]> nums[j+1]){
+                int temp = nums[j];
+                nums[j]= nums[j+1];
+                nums[j+1] = temp;
+            }
+        }
+    }
+    
+    return nums;
+}
+
