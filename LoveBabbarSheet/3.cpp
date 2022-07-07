@@ -1,3 +1,5 @@
+//coding ninja answer
+
 vector<int> kthSmallLarge(vector<int> &arr, int n, int k)
 {
 	int min=arr[0], temp=0;
