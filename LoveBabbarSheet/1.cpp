@@ -28,8 +28,10 @@ int main(){
 }
 
 
-//coding ninja (not all the elements need to be swaped.)
-//a
+//coding ninja (not all the elements need to be swaped ATQ)
+//there are two solutions 
+// a
+
 void reverseArray(vector<int> &arr , int m)
 {
     int t=arr.size(),temp=0, x=m+1;
@@ -48,12 +50,12 @@ void reverseArray(vector<int> &arr , int m)
     }
     for(int i=k;i<t;i++){
         arr[i]=arr2[i-k];
-    }
-            
+    }        
 }
 
 
 //b
+
 /*
     Time complexity: O(N)
     Space Complexity: O(N)
