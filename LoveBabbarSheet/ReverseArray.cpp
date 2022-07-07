@@ -1,3 +1,5 @@
+// swaping all the elements
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -24,8 +26,10 @@ int main(){
 
     return 0;
 }
-//coding ninja ans
 
+
+//coding ninja (not all the elements need to be swaped.)
+//a
 void reverseArray(vector<int> &arr , int m)
 {
     int t=arr.size(),temp=0, x=m+1;
@@ -45,10 +49,11 @@ void reverseArray(vector<int> &arr , int m)
     for(int i=k;i<t;i++){
         arr[i]=arr2[i-k];
     }
-     
-       
+            
 }
 
+
+//b
 /*
     Time complexity: O(N)
     Space Complexity: O(N)
@@ -61,17 +66,13 @@ void reverseArray(vector<int> &arr , int m) {
 	int n = arr.size();
 	vector<int> brr(n , 0);
 	int p = 0;
-
 	
 	for (int i = 0 ; i <= m ; i++) {
 		brr[p++] = arr[i];
-	}
-
-	
+	}	
 	for (int j = n - 1 ; j > m ; j--) {
 		brr[p++] = arr[j];
 	}
-
 	for (int i = 0 ; i < n  ; i++) {
 		arr[i] = brr[i];
 	}
